@@ -4,7 +4,7 @@ let minutes = document.getElementById('minutes')
 let seconds = document.getElementById('seconds')
 let dateNow = document.querySelector('.create-date')
 
-const newYearDate = new Date("May 27 , 2022 00:00:00").getTime();
+const newYearDate = new Date("Agust 26 , 2022 00:00:00").getTime();
 updateCountDown();
 displayDate();
 
