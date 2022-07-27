@@ -1,5 +1,7 @@
-@import url('http://fonts.cdnfonts.com/css/boxigen');
-@import url('http://fonts.cdnfonts.com/css/childzone');
+/* @import url('http://fonts.cdnfonts.com/css/boxigen'); */
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+/* @import url('http://fonts.cdnfonts.com/css/childzone'); */
+@import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
 
 
 * {
@@ -30,14 +32,18 @@ body {
     font-size: 4rem;
     color: var(--heading);
     margin-bottom: 1rem;
-    font-family: 'BOXIGEN', sans-serif;
+    /* font-family: 'BOXIGEN', sans-serif; */
+    font-family: 'Slackey', cursive;
 }
 
 .year {
     font-weight: 800;
     font-size: 6rem;
     color: var(--year);
-    font-family: 'Childzone', sans-serif;
+    /* font-family: 'Childzone', sans-serif; */
+    font-family: 'Ewert', cursive;
+
+    text-align: center;
 
 
 }
@@ -52,6 +58,10 @@ body {
     padding: 10rem auto;
     margin: 30px;
     height: 150px;
+    /* font-family: 'Ewert', cursive; */
+    font-family: 'Slackey', cursive;
+
+
 }
 
 .countdown div {
@@ -71,8 +81,8 @@ body {
     left: 0%;
     font-size: 30px;
     color: var(--text);
-    font-family: 'Childzone', sans-serif;
-
+    /* font-family: 'Childzone', sans-serif; */
+    font-family: 'Slackey', cursive;
 
 }
 
@@ -112,10 +122,17 @@ body {
 
     .countdown div {
         font-size: 2rem;
+        margin: -2rem;
+        text-align: center;
+
     }
 
     .countdown div::before {
         font-size: 20px;
+        /* text-align: center; */
+        /* margin: -2rem; */
+        transform: translateX(1rem);
+
     }
 
     .countdown div::before {
