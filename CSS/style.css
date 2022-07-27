@@ -1,117 +1,130 @@
-*
-{
+@import url('http://fonts.cdnfonts.com/css/boxigen');
+@import url('http://fonts.cdnfonts.com/css/childzone');
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: cursive;
-    --primary : rgb(236, 148, 119);
-    --secondry : rgb(236, 91, 43);
+    --primary: rgb(236, 148, 119);
+    --secondry: rgb(236, 91, 43);
     --heading: rgb(141, 47, 15);
     --text: rgb(203, 191, 184);
     --year: rgb(125, 70, 12);
+
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color:var(--primary);
+    /* background-color: var(--primary); */
+    background-color: rgb(51, 15, 15);
     overflow: hidden;
 }
 
-.heading
-{
+.heading {
     font-size: 4rem;
-    color: var(--heading) ; 
+    color: var(--heading);
     margin-bottom: 1rem;
+    font-family: 'BOXIGEN', sans-serif;
 }
-.year
-{
+
+.year {
     font-weight: 800;
     font-size: 6rem;
     color: var(--year);
+    font-family: 'Childzone', sans-serif;
+
+
 }
-.countdown
-{
+
+.countdown {
     display: flex;
     align-items: center;
-    background-color: var(--secondry);
+    /* background-color: var(--secondry); */
+    /* background-color: rgb(72, 26, 2); */
     width: 100%;
     justify-content: space-around;
     padding: 10rem auto;
     margin: 30px;
     height: 150px;
 }
-.countdown div
-{
+
+.countdown div {
     font-size: 4rem;
-    color: var(--text);
+    /* color: var(--text); */
+    color: rgb(164, 60, 0);
     margin: 4rem 2rem;
     position: relative;
     font-weight: 600;
     width: 100px;
 }
-.countdown div::before
-{
+
+.countdown div::before {
     content: "";
     position: absolute;
     bottom: -40%;
     left: 0%;
     font-size: 30px;
     color: var(--text);
+    font-family: 'Childzone', sans-serif;
+
+
 }
-.countdown div#days::before
-{
+
+.countdown div#days::before {
     content: "Days";
 }
-.countdown div#hours::before
-{
+
+.countdown div#hours::before {
     content: "Hours";
 }
-.countdown div#minutes::before
-{
+
+.countdown div#minutes::before {
     content: "Minutes";
 }
-.countdown div#seconds::before
-{
+
+.countdown div#seconds::before {
     content: "Seconds";
 }
-.create-date
-{
+
+.create-date {
     position: absolute;
     bottom: 6%;
     color: var(--year);
+    font-family: 'BOXIGEN', sans-serif;
+
 }
 
 @media(max-width: 576px) {
-    .heading
-    {
+    .heading {
         font-size: 2rem;
         margin-bottom: 3rem;
     }
-    .year
-    {
+
+    .year {
         font-size: 4rem;
     }
-    .countdown div
-    {
+
+    .countdown div {
         font-size: 2rem;
     }
-    .countdown div::before
-    {
+
+    .countdown div::before {
         font-size: 20px;
     }
-    .countdown div::before
-    {
+
+    .countdown div::before {
         bottom: -100%;
     }
 }
 
-@media(max-width:375px){
-    .countdown div::before
-    {
+@media(max-width:375px) {
+    .countdown div::before {
         font-size: 15px;
     }
 }
