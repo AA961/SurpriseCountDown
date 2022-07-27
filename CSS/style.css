@@ -34,6 +34,7 @@ body {
     margin-bottom: 1rem;
     /* font-family: 'BOXIGEN', sans-serif; */
     font-family: 'Slackey', cursive;
+    text-align: center;
 }
 
 .year {
@@ -106,7 +107,7 @@ body {
     position: absolute;
     bottom: 6%;
     color: var(--year);
-    font-family: 'BOXIGEN', sans-serif;
+    font-family: 'Slackey', cursive;
 
 }
 
@@ -128,7 +129,7 @@ body {
     }
 
     .countdown div::before {
-        font-size: 20px;
+        font-size: 15px !important;
         /* text-align: center; */
         /* margin: -2rem; */
         transform: translateX(1rem);
