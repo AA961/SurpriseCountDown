@@ -43,7 +43,7 @@ function updateCountDown() {
 
     setTimeout(updateCountDown, 1000)
 
-    if (remainingSeconds == 0 && remainingHours == 0 && remainingMinutes == 0 && remainingSeconds == 0) {
+    if (remainingSeconds <= 0 && remainingHours <= 0 && remainingMinutes <= 0 && remainingSeconds <= 0) {
         window.location = 'https://aa961.github.io/hbd'
 
     }
