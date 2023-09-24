@@ -1,20 +1,18 @@
 /* @import url('http://fonts.cdnfonts.com/css/boxigen'); */
-@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Slackey&display=swap");
 /* @import url('http://fonts.cdnfonts.com/css/childzone'); */
-@import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Ewert&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: cursive;
-    --primary: rgb(236, 148, 119);
-    --secondry: rgb(236, 91, 43);
-    --heading: rgb(141, 47, 15);
-    --text: rgb(203, 191, 184);
-    --year: rgb(125, 70, 12);
-
+    --primary: rgb(214, 137, 201);
+    --secondry: rgb(198, 104, 211);
+    --heading: rgb(185, 97, 171);
+    --text: rgb(159, 217, 255);
+    --year: rgb(130, 138, 255);
 }
 
 body {
@@ -24,29 +22,30 @@ body {
     align-items: center;
     flex-direction: column;
     /* background-color: var(--primary); */
-    background-color: rgb(51, 15, 15);
+    /* background-color: rgb(51, 15, 15); */
+    background: rgb(0, 206, 255);
+    background: linear-gradient(4deg, rgb(231, 148, 206) 0%, rgb(238, 131, 248) 20%, rgba(173, 255, 249, 1) 100%);
     overflow: hidden;
+    /* padding: 1rem; */
 }
 
 .heading {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--heading);
     margin-bottom: 1rem;
     /* font-family: 'BOXIGEN', sans-serif; */
-    font-family: 'Slackey', cursive;
+    font-family: "Slackey", cursive;
     text-align: center;
 }
 
 .year {
     font-weight: 800;
-    font-size: 6rem;
+    font-size: 4rem;
     color: var(--year);
     /* font-family: 'Childzone', sans-serif; */
-    font-family: 'Ewert', cursive;
+    font-family: "Ewert", cursive;
 
     text-align: center;
-
-
 }
 
 .countdown {
@@ -60,15 +59,13 @@ body {
     margin: 30px;
     height: 150px;
     /* font-family: 'Ewert', cursive; */
-    font-family: 'Slackey', cursive;
-
-
+    font-family: "Slackey", cursive;
 }
 
 .countdown div {
     font-size: 4rem;
     /* color: var(--text); */
-    color: rgb(164, 60, 0);
+    color: rgb(138, 155, 255);
     margin: 4rem 2rem;
     position: relative;
     font-weight: 600;
@@ -83,8 +80,7 @@ body {
     font-size: 30px;
     color: var(--text);
     /* font-family: 'Childzone', sans-serif; */
-    font-family: 'Slackey', cursive;
-
+    font-family: "Slackey", cursive;
 }
 
 .countdown div#days::before {
@@ -107,33 +103,30 @@ body {
     position: absolute;
     bottom: 6%;
     color: var(--year);
-    font-family: 'Slackey', cursive;
-
+    font-family: "Slackey", cursive;
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
     .heading {
         font-size: 2rem;
         margin-bottom: 3rem;
     }
 
     .year {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .countdown div {
         font-size: 2rem;
         margin: -2rem;
         text-align: center;
-
     }
 
     .countdown div::before {
         font-size: 15px !important;
         /* text-align: center; */
         /* margin: -2rem; */
-        transform: translateX(1rem);
-
+        transform: translateX(8px);
     }
 
     .countdown div::before {
@@ -141,7 +134,7 @@ body {
     }
 }
 
-@media(max-width:375px) {
+@media (max-width: 375px) {
     .countdown div::before {
         font-size: 15px;
     }

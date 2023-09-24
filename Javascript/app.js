@@ -5,7 +5,7 @@ let seconds = document.getElementById('seconds')
 let dateNow = document.querySelector('.create-date')
 
 
-const newYearDate = new Date("September 15 , 2023 12:00:00").getTime();
+const newYearDate = new Date("September 25 , 2023 24:00:00").getTime();
 updateCountDown();
 displayDate();
 
@@ -43,8 +43,7 @@ function updateCountDown() {
 
     setTimeout(updateCountDown, 1000)
 
-    // if (remainingSeconds <= 0 && remainingHours <= 0 && remainingMinutes <= 0 && remainingSeconds <= 0) {
-    //     window.location = 'https://aa961.github.io/hbd'
-
-    // }
+    if (remainingSeconds <= 0 && remainingHours <= 0 && remainingMinutes <= 0 && remainingSeconds <= 0) {
+        window.location = 'https://hbd-anisha.netlify.app/'
+    }
 }
