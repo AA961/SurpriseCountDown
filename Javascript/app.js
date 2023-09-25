@@ -44,6 +44,6 @@ function updateCountDown() {
     setTimeout(updateCountDown, 1000)
 
     if (remainingSeconds <= 0 && remainingHours <= 0 && remainingMinutes <= 0 && remainingSeconds <= 0) {
-        window.location = 'https://hbd-anisha.netlify.app/'
+        window.location = 'https://hbd-anisha-sis.netlify.app/'
     }
 }
